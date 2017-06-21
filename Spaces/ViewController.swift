@@ -27,6 +27,9 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
         // Dispose of any resources that can be recreated.
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        self.tabBarController?.tabBar.isHidden = false
+    }
     func observeUserMessages(){
         guard let uid = Auth.auth().currentUser?.uid else {
             return
@@ -85,6 +88,7 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
     }
     
     func setupUI(){
+        self.tabBarController?.tabBar.isHidden = false
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background.png")!)
         if Auth.auth().currentUser?.uid == nil {
             performSegue(withIdentifier: "authenticateSegue", sender: nil)
@@ -212,6 +216,7 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
                 let nav = segue.destination as! UINavigationController
                 let newMessageVC = nav.topViewController as! NewMessageViewController
                 newMessageVC.messagesController = self
+                self.tabBarController?.tabBar.isHidden = true
             }
             if identifier == "logSegue", let selectedUser = sender as? Person{
                 let chatVC = segue.destination as! ChatLogViewController

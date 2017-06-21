@@ -32,9 +32,7 @@ class messagesCell: UITableViewCell {
                                 self.userImage.image = UIImage(data: data)
                                 self.userName.text = dictionary["name"] as? String
                                 if message.imageURL != nil {
-                                    if let name = self.userName.text{
-                                    self.userMessage.text = "\(name) sent an image"
-                                    }
+                                    self.userMessage.text = "Image"
                                 } else {
                                 self.userMessage.text = message.text
                                 }

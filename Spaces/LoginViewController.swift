@@ -18,7 +18,6 @@ class LoginViewController: UIViewController {
         
     @IBOutlet weak var lineHeight: NSLayoutConstraint!
     @IBOutlet weak var nameTextFieldHeight: NSLayoutConstraint!
-    @IBOutlet weak var inputContainerHeight: NSLayoutConstraint!
     @IBOutlet weak var authenticationToggle: CustomSegmentedControl!
     
     @IBOutlet weak var authenticationButton: RoundedButton!
@@ -49,12 +48,10 @@ class LoginViewController: UIViewController {
         //Logic goes here and is based on index selection
         if authenticationToggle.selectedIndex == 0{
             authenticationButton.setTitle("Sign Up", for: .normal)
-            inputContainerHeight.constant += 40
-            nameTextFieldHeight.constant = 30
+            nameTextFieldHeight.constant = 50
             lineHeight.constant = 1
         } else if authenticationToggle.selectedIndex == 1{
             authenticationButton.setTitle("Sign In", for: .normal)
-            inputContainerHeight.constant -= 40
             nameTextFieldHeight.constant = 0
             lineHeight.constant = 0
         }

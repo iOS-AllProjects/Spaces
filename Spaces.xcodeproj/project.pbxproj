@@ -21,6 +21,7 @@
 		B69E66AD1EF2EC1F0006EB23 /* messagesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69E66AC1EF2EC1F0006EB23 /* messagesCell.swift */; };
 		B69E66AF1EF2F4C40006EB23 /* userCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69E66AE1EF2F4C40006EB23 /* userCell.swift */; };
 		B69E66B11EF31AAF0006EB23 /* chatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69E66B01EF31AAF0006EB23 /* chatCell.swift */; };
+		B69E66B31EFAE0600006EB23 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B69E66B21EFAE0600006EB23 /* AdSupport.framework */; };
 		B6A48DD61EF04F7000ED19BB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6A48DD51EF04F7000ED19BB /* GoogleService-Info.plist */; };
 		B6B099F21EF18E6D0037BCDC /* NewMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B099F11EF18E6D0037BCDC /* NewMessageViewController.swift */; };
 		B6B099F41EF1935D0037BCDC /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B099F31EF1935D0037BCDC /* Person.swift */; };
@@ -45,6 +46,7 @@
 		B69E66AC1EF2EC1F0006EB23 /* messagesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = messagesCell.swift; sourceTree = "<group>"; };
 		B69E66AE1EF2F4C40006EB23 /* userCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = userCell.swift; sourceTree = "<group>"; };
 		B69E66B01EF31AAF0006EB23 /* chatCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = chatCell.swift; sourceTree = "<group>"; };
+		B69E66B21EFAE0600006EB23 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		B6A48DD51EF04F7000ED19BB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B6B099F11EF18E6D0037BCDC /* NewMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewMessageViewController.swift; sourceTree = "<group>"; };
 		B6B099F31EF1935D0037BCDC /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B69E66B31EFAE0600006EB23 /* AdSupport.framework in Frameworks */,
 				72D45FF5115907B469E6E03B /* Pods_Spaces.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -71,6 +74,7 @@
 		A6073D85107084F5747A95F3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B69E66B21EFAE0600006EB23 /* AdSupport.framework */,
 				C5D5E9855580DC4BC0B88AB9 /* Pods_Spaces.framework */,
 			);
 			name = Frameworks;
