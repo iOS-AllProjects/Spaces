@@ -27,6 +27,8 @@
 		B6B099F41EF1935D0037BCDC /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B099F31EF1935D0037BCDC /* Person.swift */; };
 		B6B099F91EF195FE0037BCDC /* GCD.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B099F81EF195FE0037BCDC /* GCD.swift */; };
 		B6B099FC1EF1C1E70037BCDC /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B099FB1EF1C1E60037BCDC /* UIImageExtension.swift */; };
+		B6E03FB51EFAFC14005DB1B8 /* DrawingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E03FB41EFAFC14005DB1B8 /* DrawingViewController.swift */; };
+		B6E03FB71EFAFD4D005DB1B8 /* Polyline.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E03FB61EFAFD4D005DB1B8 /* Polyline.swift */; };
 		B6E0A81C1EF1C768009A8545 /* RoundedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E0A81B1EF1C768009A8545 /* RoundedImage.swift */; };
 /* End PBXBuildFile section */
 
@@ -52,7 +54,10 @@
 		B6B099F31EF1935D0037BCDC /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		B6B099F81EF195FE0037BCDC /* GCD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCD.swift; sourceTree = "<group>"; };
 		B6B099FB1EF1C1E60037BCDC /* UIImageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
+		B6E03FB41EFAFC14005DB1B8 /* DrawingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawingViewController.swift; sourceTree = "<group>"; };
+		B6E03FB61EFAFD4D005DB1B8 /* Polyline.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Polyline.swift; sourceTree = "<group>"; };
 		B6E0A81B1EF1C768009A8545 /* RoundedImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedImage.swift; sourceTree = "<group>"; };
+		B6E296D31EFB2BC90081DC47 /* Spaces-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Spaces-Bridging-Header.h"; sourceTree = "<group>"; };
 		BA42FEB1A57EBC0A95004A42 /* Pods-Spaces.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spaces.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Spaces/Pods-Spaces.debug.xcconfig"; sourceTree = "<group>"; };
 		C5D5E9855580DC4BC0B88AB9 /* Pods_Spaces.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Spaces.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C98ECED74B2DE6A1CDF5538D /* Pods-Spaces.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spaces.release.xcconfig"; path = "Pods/Target Support Files/Pods-Spaces/Pods-Spaces.release.xcconfig"; sourceTree = "<group>"; };
@@ -130,6 +135,7 @@
 			children = (
 				B6B099F31EF1935D0037BCDC /* Person.swift */,
 				B69E66AA1EF2E5E60006EB23 /* Message.swift */,
+				B6E03FB61EFAFD4D005DB1B8 /* Polyline.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -141,6 +147,7 @@
 				B63314901EF07DA3008EB3F4 /* ViewController.swift */,
 				B6B099F11EF18E6D0037BCDC /* NewMessageViewController.swift */,
 				B60BCC361EF1F82C00D03453 /* ChatLogViewController.swift */,
+				B6E03FB41EFAFC14005DB1B8 /* DrawingViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -153,6 +160,7 @@
 				B65093491EF0346A00B57B72 /* LaunchScreen.storyboard */,
 				B65093471EF0346A00B57B72 /* Assets.xcassets */,
 				B65093441EF0346A00B57B72 /* Main.storyboard */,
+				B6E296D31EFB2BC90081DC47 /* Spaces-Bridging-Header.h */,
 			);
 			name = Support;
 			sourceTree = "<group>";
@@ -308,6 +316,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B63314911EF07DA3008EB3F4 /* ViewController.swift in Sources */,
+				B6E03FB51EFAFC14005DB1B8 /* DrawingViewController.swift in Sources */,
 				B65093431EF0346A00B57B72 /* LoginViewController.swift in Sources */,
 				B6B099F91EF195FE0037BCDC /* GCD.swift in Sources */,
 				B69E66AD1EF2EC1F0006EB23 /* messagesCell.swift in Sources */,
@@ -321,6 +330,7 @@
 				B65093561EF03BE500B57B72 /* RoundedButton.swift in Sources */,
 				B69E66AF1EF2F4C40006EB23 /* userCell.swift in Sources */,
 				B69E66B11EF31AAF0006EB23 /* chatCell.swift in Sources */,
+				B6E03FB71EFAFD4D005DB1B8 /* Polyline.swift in Sources */,
 				B6B099F41EF1935D0037BCDC /* Person.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -448,6 +458,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.etjenymeraj.Spaces;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Spaces/Spaces-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -462,6 +473,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.etjenymeraj.Spaces;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Spaces/Spaces-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

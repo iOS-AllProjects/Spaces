@@ -14,7 +14,7 @@ import FirebaseAnalytics
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var kDatabase : CBLDatabase?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -38,8 +38,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UITabBar.appearance().backgroundImage = UIImage()
         UITabBar.appearance().shadowImage = UIImage()
         
-        // Use Firebase library to configure APIs
+        // Configure Firebase
         FirebaseApp.configure()
+        
+        // Configure Couchbase
+        self.kDatabase = try? CBLManager.sharedInstance().databaseNamed("spaces")
 
         return true
     }

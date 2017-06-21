@@ -230,10 +230,10 @@
             </objects>
             <point key="canvasLocation" x="2857" y="-186"/>
         </scene>
-        <!--Board-->
+        <!--Canvas-->
         <scene sceneID="JEN-tV-dtG">
             <objects>
-                <viewController id="PpU-9E-3mz" sceneMemberID="viewController">
+                <viewController id="PpU-9E-3mz" customClass="DrawingViewController" customModule="Spaces" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Yqu-2e-1Aw"/>
                         <viewControllerLayoutGuide type="bottom" id="SwZ-xq-E3g"/>
@@ -241,13 +241,33 @@
                     <view key="view" contentMode="scaleToFill" id="Srv-Zu-8Z4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TdL-HQ-5hT">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="0.1803921568627451" green="0.22352941176470587" blue="0.31764705882352939" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="SwZ-xq-E3g" firstAttribute="top" secondItem="TdL-HQ-5hT" secondAttribute="bottom" id="CDC-K3-xSP"/>
+                            <constraint firstAttribute="trailing" secondItem="TdL-HQ-5hT" secondAttribute="trailing" id="Pgr-To-A90"/>
+                            <constraint firstItem="TdL-HQ-5hT" firstAttribute="leading" secondItem="Srv-Zu-8Z4" secondAttribute="leading" id="WTg-U3-hrg"/>
+                            <constraint firstItem="TdL-HQ-5hT" firstAttribute="top" secondItem="Yqu-2e-1Aw" secondAttribute="bottom" id="pw7-Ox-gUE"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Board" image="drawing_icon" id="BGP-cr-4Hk"/>
+                    <navigationItem key="navigationItem" title="Canvas" id="wCP-Iz-Gg6">
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="EnG-Mc-YsH">
+                            <connections>
+                                <action selector="refreshBarButtonPressed:" destination="PpU-9E-3mz" id="EZK-PX-CMP"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="mainImageView" destination="TdL-HQ-5hT" id="gjX-as-Ota"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TJt-f1-LGf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2871" y="554"/>
+            <point key="canvasLocation" x="3808.8000000000002" y="553.67316341829087"/>
         </scene>
         <!--Messages-->
         <scene sceneID="JPN-2i-qei">
@@ -499,7 +519,7 @@
                     <connections>
                         <segue destination="2no-jx-zDq" kind="relationship" relationship="viewControllers" id="Pcl-iU-f4j"/>
                         <segue destination="Aqj-Hd-9Bf" kind="relationship" relationship="viewControllers" id="NuM-5f-K5C"/>
-                        <segue destination="PpU-9E-3mz" kind="relationship" relationship="viewControllers" id="HrK-rE-Fk5"/>
+                        <segue destination="h9e-pt-PvE" kind="relationship" relationship="viewControllers" id="HrK-rE-Fk5"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tcs-tj-TxF" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -766,6 +786,25 @@
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="4832.8000000000002" y="-514.09295352323841"/>
+        </scene>
+        <!--Board-->
+        <scene sceneID="aM6-We-j12">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="h9e-pt-PvE" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Board" image="drawing_icon" id="BGP-cr-4Hk"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xim-uN-jbH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="PpU-9E-3mz" kind="relationship" relationship="rootViewController" id="otX-73-0bM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ozv-R2-3Vw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2869.5999999999999" y="553.67316341829087"/>
         </scene>
     </scenes>
     <resources>
