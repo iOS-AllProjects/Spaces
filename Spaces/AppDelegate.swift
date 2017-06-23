@@ -9,13 +9,15 @@
 import UIKit
 import Firebase
 import FirebaseAnalytics
+import RealmSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     var kDatabase : CBLDatabase?
-
+    var uiRealm: Realm?
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
 
@@ -43,7 +45,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // Configure Couchbase
         self.kDatabase = try? CBLManager.sharedInstance().databaseNamed("spaces")
-
+        
+        // Configure Realm
+        uiRealm = try! Realm()
+        
         return true
     }
 

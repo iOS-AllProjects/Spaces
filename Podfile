@@ -14,5 +14,7 @@ pod 'Firebase/Database'
 pod 'Firebase/RemoteConfig'
 pod 'Firebase/Auth'
 
+  # Realm Pod for Spaces
+pod 'RealmSwift'
 
 end

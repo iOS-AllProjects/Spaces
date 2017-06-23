@@ -52,6 +52,11 @@ PODS:
   - GoogleToolboxForMac/NSString+URLArguments (2.1.1)
   - GTMSessionFetcher/Core (1.1.10)
   - Protobuf (3.3.0)
+  - Realm (2.8.1):
+    - Realm/Headers (= 2.8.1)
+  - Realm/Headers (2.8.1)
+  - RealmSwift (2.8.1):
+    - Realm (= 2.8.1)
 
 DEPENDENCIES:
   - couchbase-lite-ios (~> 1.4.0)
@@ -60,6 +65,7 @@ DEPENDENCIES:
   - Firebase/Database
   - Firebase/RemoteConfig
   - Firebase/Storage
+  - RealmSwift
 
 SPEC CHECKSUMS:
   couchbase-lite-ios: 5b9f59ce74c2d981c41795f0949d31354d90c459
@@ -74,7 +80,9 @@ SPEC CHECKSUMS:
   GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
   GTMSessionFetcher: 30d874b96d0d76028f61fbd122801e3f030d47db
   Protobuf: d582fecf68201eac3d79ed61369ef45734394b9c
+  Realm: 2627602ad6818451f0cb8c2a6e072f7f10a5f360
+  RealmSwift: 4764ca7657f2193c256fb032c0b123926f70dbcd
 
-PODFILE CHECKSUM: 0bbf50874cd0f9213251b40e064113e7f3461e67
+PODFILE CHECKSUM: dceb4a58164643323b26e0c96d32db937796a1b3
 
 COCOAPODS: 1.1.1

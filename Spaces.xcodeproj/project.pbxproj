@@ -17,6 +17,10 @@
 		B650934B1EF0346A00B57B72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B65093491EF0346A00B57B72 /* LaunchScreen.storyboard */; };
 		B65093531EF0376B00B57B72 /* CustomSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65093521EF0376B00B57B72 /* CustomSegmentedControl.swift */; };
 		B65093561EF03BE500B57B72 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65093551EF03BE500B57B72 /* RoundedButton.swift */; };
+		B653ACA21EFBD43B00EB26AA /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = B653ACA11EFBD43B00EB26AA /* Task.swift */; };
+		B653ACA41EFBFF0B00EB26AA /* TaskList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B653ACA31EFBFF0B00EB26AA /* TaskList.swift */; };
+		B653ACA61EFC000300EB26AA /* TaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B653ACA51EFC000300EB26AA /* TaskListViewController.swift */; };
+		B653ACA81EFC001400EB26AA /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B653ACA71EFC001400EB26AA /* TasksViewController.swift */; };
 		B69E66AB1EF2E5E60006EB23 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69E66AA1EF2E5E60006EB23 /* Message.swift */; };
 		B69E66AD1EF2EC1F0006EB23 /* messagesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69E66AC1EF2EC1F0006EB23 /* messagesCell.swift */; };
 		B69E66AF1EF2F4C40006EB23 /* userCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69E66AE1EF2F4C40006EB23 /* userCell.swift */; };
@@ -44,6 +48,11 @@
 		B650934C1EF0346A00B57B72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B65093521EF0376B00B57B72 /* CustomSegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSegmentedControl.swift; sourceTree = "<group>"; };
 		B65093551EF03BE500B57B72 /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		B653ACA11EFBD43B00EB26AA /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		B653ACA31EFBFF0B00EB26AA /* TaskList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskList.swift; sourceTree = "<group>"; };
+		B653ACA51EFC000300EB26AA /* TaskListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskListViewController.swift; sourceTree = "<group>"; };
+		B653ACA71EFC001400EB26AA /* TasksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
+		B653ACA91EFC527A00EB26AA /* Spaces.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Spaces.entitlements; sourceTree = "<group>"; };
 		B69E66AA1EF2E5E60006EB23 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		B69E66AC1EF2EC1F0006EB23 /* messagesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = messagesCell.swift; sourceTree = "<group>"; };
 		B69E66AE1EF2F4C40006EB23 /* userCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = userCell.swift; sourceTree = "<group>"; };
@@ -106,6 +115,7 @@
 		B650933F1EF0346A00B57B72 /* Spaces */ = {
 			isa = PBXGroup;
 			children = (
+				B653ACA91EFC527A00EB26AA /* Spaces.entitlements */,
 				B65093401EF0346A00B57B72 /* AppDelegate.swift */,
 				B6B099F61EF193710037BCDC /* Controller */,
 				B6B099F51EF193620037BCDC /* Model */,
@@ -136,6 +146,8 @@
 				B6B099F31EF1935D0037BCDC /* Person.swift */,
 				B69E66AA1EF2E5E60006EB23 /* Message.swift */,
 				B6E03FB61EFAFD4D005DB1B8 /* Polyline.swift */,
+				B653ACA11EFBD43B00EB26AA /* Task.swift */,
+				B653ACA31EFBFF0B00EB26AA /* TaskList.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -148,6 +160,8 @@
 				B6B099F11EF18E6D0037BCDC /* NewMessageViewController.swift */,
 				B60BCC361EF1F82C00D03453 /* ChatLogViewController.swift */,
 				B6E03FB41EFAFC14005DB1B8 /* DrawingViewController.swift */,
+				B653ACA51EFC000300EB26AA /* TaskListViewController.swift */,
+				B653ACA71EFC001400EB26AA /* TasksViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -227,6 +241,11 @@
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = UZ48MG98NG;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -324,13 +343,17 @@
 				B65093531EF0376B00B57B72 /* CustomSegmentedControl.swift in Sources */,
 				B6B099FC1EF1C1E70037BCDC /* UIImageExtension.swift in Sources */,
 				B6B099F21EF18E6D0037BCDC /* NewMessageViewController.swift in Sources */,
+				B653ACA61EFC000300EB26AA /* TaskListViewController.swift in Sources */,
 				B60BCC371EF1F82C00D03453 /* ChatLogViewController.swift in Sources */,
 				B6E0A81C1EF1C768009A8545 /* RoundedImage.swift in Sources */,
 				B69E66AB1EF2E5E60006EB23 /* Message.swift in Sources */,
 				B65093561EF03BE500B57B72 /* RoundedButton.swift in Sources */,
+				B653ACA41EFBFF0B00EB26AA /* TaskList.swift in Sources */,
 				B69E66AF1EF2F4C40006EB23 /* userCell.swift in Sources */,
 				B69E66B11EF31AAF0006EB23 /* chatCell.swift in Sources */,
+				B653ACA81EFC001400EB26AA /* TasksViewController.swift in Sources */,
 				B6E03FB71EFAFD4D005DB1B8 /* Polyline.swift in Sources */,
+				B653ACA21EFBD43B00EB26AA /* Task.swift in Sources */,
 				B6B099F41EF1935D0037BCDC /* Person.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -453,6 +476,7 @@
 			baseConfigurationReference = BA42FEB1A57EBC0A95004A42 /* Pods-Spaces.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Spaces/Spaces.entitlements;
 				DEVELOPMENT_TEAM = UZ48MG98NG;
 				INFOPLIST_FILE = Spaces/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -468,6 +492,7 @@
 			baseConfigurationReference = C98ECED74B2DE6A1CDF5538D /* Pods-Spaces.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Spaces/Spaces.entitlements;
 				DEVELOPMENT_TEAM = UZ48MG98NG;
 				INFOPLIST_FILE = Spaces/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

@@ -39,6 +39,7 @@ class DrawingViewController: UIViewController {
     }
     
     func setupUI(){
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background.png")!)
         let appDelegate = UIApplication.shared.delegate as? AppDelegate
         liveQuery = appDelegate!.kDatabase!.createAllDocumentsQuery().asLive()
         liveQuery.addObserver(self, forKeyPath: "rows", options: NSKeyValueObservingOptions.new, context: nil)
